@@ -1,3 +1,4 @@
+
 //Code for dark mode settings
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -30,3 +31,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+(function() {
+    const body = document.body;
+    const logo = document.getElementById('logo');
+    const darkModeCheckbox = document.getElementById('darkMode');
+
+    // Always enable dark mode by default
+    body.classList.add('dark-mode');
+    if (logo) {
+        logo.src = 'resources/exzodiaBlack.png';
+    }
+    localStorage.setItem('toggleDarkMode', 'dark');
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (darkModeCheckbox) {
+            darkModeCheckbox.checked = true; // Ensure checkbox is checked
+        }
+
+        // Listen for user toggling dark mode
+        darkModeCheckbox?.addEventListener('change', function() {
+            if (darkModeCheckbox.checked) {
+                body.classList.add('dark-mode');
+                if (logo) logo.src = 'resources/exzodiaBlack.png';
+                localStorage.setItem('toggleDarkMode', 'dark');
+            } else {
+                body.classList.remove('dark-mode');
+                if (logo) logo.src = 'resources/exzodiaWhite.png';
+                localStorage.removeItem('toggleDarkMode');
+            }
+        });
+    });
+})();
