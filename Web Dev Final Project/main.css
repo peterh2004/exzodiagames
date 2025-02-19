@@ -1,0 +1,364 @@
+body {
+   background-color: rgb(230, 224, 224); 
+   font-family: 'Oxanium', sans-serif;
+}
+
+
+.dark-mode {
+    background-color: rgb(37, 37, 49);
+    color: white;
+}
+
+
+header {
+    position: fixed;
+    background-color: white;
+    border-bottom: solid 0.5rem;
+    border-image: linear-gradient(to right, #fdaf42, #fc51fa, #2cd4ff);
+    border-image-slice: 1;
+    height: 6rem;
+    width: 100%;
+    left: 0;
+    top: 0;
+   
+}
+
+.dark-mode header {
+    background-color: rgb(20, 21, 36);
+}
+
+#logo {
+    margin: 1rem;
+    height: 70%;
+}
+
+
+#pfp {
+    width: 3rem;
+    height: 3rem;
+    float: right;
+    margin: 1.5rem 3rem;
+    border-radius: 50%;
+    
+     
+}
+
+
+footer {
+    position: fixed;
+    background-color: rgb(158, 153, 153);
+    border-top: solid 0.4rem;
+    border-image: linear-gradient(to right, #fdaf42, #fc51fa, #2cd4ff);
+    border-image-slice: 1;
+    height: 3rem;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.dark-mode footer {
+    background-color: rgb(20, 21, 36);
+}
+
+#about {
+    float: right;
+    padding-right: 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: black;
+    text-decoration: none;
+
+}
+
+.dark-mode #about {
+    color: white;
+}
+
+#copyright {
+    display: inline-block;
+    padding-left: 42%;
+    padding-top: 1rem;
+}
+
+#aboutUsParagraph {
+    margin: 10rem;
+}
+
+#aboutUsParagraph h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+#aboutUsParagraph p {
+    left: 50%;
+    text-align: center;
+    max-width: 1500px;
+    font-size: 2rem;
+    line-height: 48px;
+}
+
+
+#settings {
+    margin-top: 8%;
+    margin-left: 18%;
+    font-size: 2.5rem;
+}
+
+#changePFP {
+    margin-top: 2%;
+    margin-left: 22%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    
+}
+
+#fileInput {
+    position: relative;
+    top: -60px;
+    margin-left: 5%;
+    width: 220px;
+    font-family: 'Oxanium', sans-serif;
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1390c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+#removePFP {
+    position: relative;
+    top: -60px;
+    margin-left: 5%;
+    width: 220px;
+    height: 45px;
+    font-family: 'Oxanium', sans-serif;
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(197, 28, 28);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+#darkModeSettings {
+    margin-top: 8%;
+    margin-left: 22%;
+    font-size: 2rem;
+}
+
+
+/* Style for the toggle switch*/
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 75px;
+  height: 34px;
+}
+  
+  
+.toggle-switch input {
+  display: none;
+}
+  
+  
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 1rem;
+  right: 0;
+  bottom: 0;
+  background-color: #999999;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+}
+  
+  
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+  
+  
+input:checked + .slider {
+  background-color: #2cd4ff; 
+}
+  
+  
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+  
+
+#pong-thumbnail {
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 300px;
+}
+
+#pong-thumbnail:hover {
+  border: solid 3px #fdaf42;
+}
+
+
+
+#pong-title {
+  margin-left: 10%;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 300px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: black;    
+}
+
+.dark-mode #pong-title {
+    color: white;
+}
+
+
+
+#Tic-Tac-Toe-thumbnail {
+  margin-top: 10%;
+
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 300px;
+  border: 1px solid gray;
+}
+
+#Tic-Tac-Toe-thumbnail:hover {
+  border: solid 3px #fdaf42;
+}
+
+
+
+#Tic-Tac-Toe-title {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 300px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: black;
+
+   
+}
+
+.dark-mode #Tic-Tac-Toe-title {
+  color: white;
+}
+
+.grid {
+  display: grid;
+  margin-top: 5%;
+  margin-left: 15%;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 400fr));
+  gap: 5px; /* Adjust the gap between images */
+}
+
+/* Grid item */
+.grid-item {
+  overflow: hidden; /* Ensure images fit within the grid item */
+}
+
+
+
+#ReactionTest-thumbnail {
+  margin-top: 10%;
+  margin-left: 10%;
+  border: 2px solid gray;
+  max-width: 500px;
+  height: 300px;
+}
+
+#ReactionTest-thumbnail:hover {
+  border: solid 3px #fdaf42;
+}
+
+#ReactionTest-title {
+  width: 100%;
+  height: 100%;
+  margin-left: 10%;
+  max-width: 500px;
+  max-height: 300px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20%;
+  color: black;
+
+}
+
+.dark-mode #ReactionTest-title {
+  color: white;
+}
+
+
+
+
+
+
+#Snake-thumbnail {
+  margin-top: 10%;
+  margin-left: 10%;
+  max-width: 500px;
+  height: 300px;
+}
+
+#Snake-thumbnail:hover {
+  border: solid 3px #fdaf42;
+}
+
+#Snake-title {
+  width: 100%;
+  height: 100%;
+  margin-left: 2%;
+  max-width: 500px;
+  max-height: 300px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20%;
+  color: black;
+
+}
+
+.dark-mode #Snake-title {
+  color: white;
+}
+
+
+
+
+
+

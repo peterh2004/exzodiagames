@@ -1,0 +1,8 @@
+ #snake-board{
+    border: 0.3rem solid gray ;
+ }
+ #snake-container {
+    width: 100%;
+    margin-top:13rem;
+    text-align:center;
+ }

@@ -1,0 +1,12 @@
+#pong-board {
+    text-align:center;
+    background-color: black;
+    border: 0.3rem solid gray ;
+    
+}
+
+#pong-container {
+    width: 100%;
+    margin-top:7.5rem;
+    text-align:center;
+ }
